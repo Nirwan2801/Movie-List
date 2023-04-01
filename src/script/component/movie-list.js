@@ -1,20 +1,19 @@
-import './movie-item'
+import './movie-item.js';
 
-class DataList extends HTMLElement {
+class MovieList extends HTMLElement {
 
     set movies(movies) {
         this._movies = movies;
-        console.log('movies :', this._movies);
         this.render();
     }
-
+    
     render() {
         this.innerHTML = "";
         this.className = "row row-cols-1 row-cols-md-4";
         this._movies.forEach(movie => {
-            const dataItemElement = document.createElement("data-item");
-            dataItemElement.data = movie;
-            this.appendChild(dataItemElement);
+            const movieItemElement = document.createElement("movie-item");
+            movieItemElement.movie = movie;
+            this.appendChild(movieItemElement);
         });
     }
 
@@ -35,4 +34,4 @@ class DataList extends HTMLElement {
     }
 }
 
-customElements.define("data-list", DataList);
+customElements.define("movie-list", MovieList);

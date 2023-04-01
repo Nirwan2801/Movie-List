@@ -1,16 +1,8 @@
 class SearchBar extends HTMLElement {
-  // constructor() {
-  //   super();
-  //   this.shadowDOM = this.attachShadow({ mode: 'open' });
-  // }
-
   connectedCallback() {
     this.render();
   }
 
-  /**
-   * @param {any} event
-   */
   set clickEvent(event) {
     this._clickEvent = event;
     this.render();
@@ -26,25 +18,26 @@ class SearchBar extends HTMLElement {
         .search-container {
             max-width: 800px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            padding: 16px;
-            border-radius: 5px;
+            padding: 10px;
+            border-radius: 10px;
             display: flex;
             position: sticky;
             top: 10px;
             background-color: white;
+            z-index:99;
           }
           
           .search-container > input {
             width: 75%;
             padding: 16px;
             border: 0;
-            border-bottom: 1px solid rgb(34, 163, 159);
+            border-bottom: 1px solid rgb(14, 131, 136);
             font-weight: bold;
           }
           
           .search-container > input:focus {
             outline: 0;
-            border-bottom: 2px solid rgb(34, 163, 159);
+            border-bottom: 2px solid rgb(14, 131, 136);
           }
           
           .search-container > input:focus::placeholder {
@@ -52,7 +45,7 @@ class SearchBar extends HTMLElement {
           }
           
           .search-container > input::placeholder {
-            color: rgb(34, 163, 159);
+            color: rgb(14, 131, 136);
             font-weight: normal;
           }
           
@@ -61,10 +54,11 @@ class SearchBar extends HTMLElement {
             cursor: pointer;
             margin-left: auto;
             padding: 16px;
-            background-color: rgb(34, 163, 159);
+            background-color: rgb(14, 131, 136);
             color: white;
             border: 0;
             text-transform: uppercase;
+            border-radius: 10px;
           }
           
           @media screen and (max-width: 550px) {

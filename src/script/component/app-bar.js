@@ -14,12 +14,13 @@ class AppBar extends HTMLElement {
         *{
             margin: 0;
             padding: 0;
+            background-color: rgb(14, 131, 136);
+            ;
             box-sizing: border-box;
         }
         :host {
             display: block;
             width: 100%;
-            background-color: rgb(34, 34, 34);
             color: white;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           }
@@ -28,7 +29,7 @@ class AppBar extends HTMLElement {
         }
         </style>
 
-        <h2>Trending Movie</h2>`;
+        <h2>TRENDING MOVIES</h2>`;
     }
 }
 
