@@ -2,7 +2,7 @@ import axios from "axios";
 
 class DataSource {
   static searchTrendingMovie() {
-    return axios.get(`https://api.themoviedb.org/3/trending/movie/day?api_key=c84e9235f54b3a9a643e5107e70c5572`)
+    return axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=c84e9235f54b3a9a643e5107e70c5572&language=en-US&page=1`)
       .then(
         ({data}) => {
           if (data.results) {

@@ -25,19 +25,20 @@ class SearchBar extends HTMLElement {
             top: 10px;
             background-color: white;
             z-index:99;
+            margin: 30px 5px;
           }
           
           .search-container > input {
             width: 75%;
             padding: 16px;
             border: 0;
-            border-bottom: 1px solid rgb(14, 131, 136);
+            border-bottom: 1px solid rgb(46, 79, 79);
             font-weight: bold;
           }
           
           .search-container > input:focus {
             outline: 0;
-            border-bottom: 2px solid rgb(14, 131, 136);
+            border-bottom: 2px solid rgb(46, 79, 79);
           }
           
           .search-container > input:focus::placeholder {
@@ -45,7 +46,7 @@ class SearchBar extends HTMLElement {
           }
           
           .search-container > input::placeholder {
-            color: rgb(14, 131, 136);
+            color: rgb(46, 79, 79);
             font-weight: normal;
           }
           
@@ -54,7 +55,7 @@ class SearchBar extends HTMLElement {
             cursor: pointer;
             margin-left: auto;
             padding: 16px;
-            background-color: rgb(14, 131, 136);
+            background-color: rgb(46, 79, 79);
             color: white;
             border: 0;
             text-transform: uppercase;
@@ -80,7 +81,7 @@ class SearchBar extends HTMLElement {
         </style>
 
         <div id="search-container" class="search-container">
-        <input placeholder="Search Movie" id="searchElement" type="search" />
+        <input placeholder="Search Movie..." id="searchElement" type="search" />
         <button id="searchButtonElement" type="submit">Search</button>
       </div>
       `;

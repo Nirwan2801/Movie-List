@@ -14,7 +14,7 @@ class AppBar extends HTMLElement {
         *{
             margin: 0;
             padding: 0;
-            background-color: rgb(14, 131, 136);
+            background-color: rgb(44, 51, 51);
             ;
             box-sizing: border-box;
         }
